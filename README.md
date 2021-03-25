@@ -5,7 +5,7 @@
 Simple customized toast for firemonkey.
 
 ## Prerequisites
-<ins> * `[Alcinoe]` For this project I used Alcinoe controls. You can dowload and install the component [**here**](https://github.com/Zeus64/alcinoe). You can use native controls like TRectangle, TLayout. I prefer Alcinoe because the visual look better than Delphi components, and is more fast too. Take a time to read about Alcinoe lib. </ins>
+<s> * `[Alcinoe]` For this project I used Alcinoe controls. You can dowload and install the component [**here**](https://github.com/Zeus64/alcinoe). You can use native controls like TRectangle, TLayout. I prefer Alcinoe because the visual look better than Delphi components, and is more fast too. Take a time to read about Alcinoe lib. </s>
 
  * `[Optional]` For ease I recommend using the [**Boss**](https://github.com/HashLoad/boss) (Dependency Manager for Delphi) for installation.
  
