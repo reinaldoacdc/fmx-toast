@@ -11,7 +11,7 @@ Simple customized toast for firemonkey.
  
  ## Boss Installation
 ```
-boss install github.com/mateusvicente100/fmx-toast
+boss install github.com/reinaldoacdc/fmx-toast
 ```
 
 ## Manual Installation
