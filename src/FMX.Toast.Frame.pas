@@ -3,22 +3,23 @@ unit FMX.Toast.Frame;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
-  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FMX.Objects, ALFmxObjects, FMX.Effects,
-  FMX.Layouts, ALFmxLayouts;
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  //ALFmxObjects, ALFmxLayouts, ALFmxObjects
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls, FMX.Objects,  FMX.Effects,
+  FMX.Layouts;
 
 type
   TFrameToast = class(TFrame)
-    retContent: TALRectangle;
-    retLine: TALRectangle;
+    retContent: TRectangle;
+    retLine: TRectangle;
     imgIcon: TPath;
-    lytText: TALLayout;
-    txtTitle: TALText;
-    txtMessage: TALText;
-    lytClose: TALLayout;
+    lytText: TLayout;
+    txtTitle: TText;
+    txtMessage: TText;
+    lytClose: TLayout;
     imgClose: TPath;
     sdwContent: TShadowEffect;
-    lytIcon: TALLayout;
+    lytIcon: TLayout;
     procedure retContentClick(Sender: TObject);
   private
     FOnClose: TProc;

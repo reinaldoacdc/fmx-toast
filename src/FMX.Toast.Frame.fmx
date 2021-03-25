@@ -7,7 +7,7 @@ object FrameToast: TFrameToast
   Size.Width = 300.000000000000000000
   Size.Height = 70.000000000000000000
   Size.PlatformDefault = False
-  object retContent: TALRectangle
+  object retContent: TRectangle
     Align = Client
     ClipChildren = True
     Fill.Color = claWhite
@@ -18,7 +18,7 @@ object FrameToast: TFrameToast
     XRadius = 5.000000000000000000
     YRadius = 5.000000000000000000
     OnClick = retContentClick
-    object retLine: TALRectangle
+    object retLine: TRectangle
       Align = Left
       ClipParent = True
       Corners = [TopLeft, BottomLeft]
@@ -31,17 +31,17 @@ object FrameToast: TFrameToast
       XRadius = 2.500000000000000000
       YRadius = 2.500000000000000000
     end
-    object lytText: TALLayout
+    object lytText: TLayout
       Align = Client
       Size.Width = 205.000000000000000000
       Size.Height = 70.000000000000000000
       Size.PlatformDefault = False
-      object txtTitle: TALText
+      object txtTitle: TText
         AutoSize = True
         Position.X = 8.000000000000000000
         Position.Y = 14.000000000000000000
-        Size.Width = 52.000000000000000000
-        Size.Height = 17.000000000000000000
+        Size.Width = 56.195964813232420000
+        Size.Height = 16.802734375000000000
         Size.PlatformDefault = False
         Text = 'Aten'#231#227'o'
         TextSettings.Font.Family = 'Roboto'
@@ -49,19 +49,19 @@ object FrameToast: TFrameToast
         TextSettings.Font.StyleExt = {00070000000000000004000000}
         TextSettings.FontColor = xFF2C2E37
       end
-      object txtMessage: TALText
+      object txtMessage: TText
         AutoSize = True
         Position.X = 8.000000000000000000
         Position.Y = 38.000000000000000000
-        Size.Width = 183.000000000000000000
-        Size.Height = 15.000000000000000000
+        Size.Width = 186.742187500000000000
+        Size.Height = 14.402343750000000000
         Size.PlatformDefault = False
         Text = 'Esse '#233' um exemplo de mensagem'
         TextSettings.Font.Family = 'Roboto'
         TextSettings.FontColor = xFFA8AAAE
       end
     end
-    object lytClose: TALLayout
+    object lytClose: TLayout
       Align = Right
       Position.X = 260.000000000000000000
       Size.Width = 40.000000000000000000
@@ -84,7 +84,7 @@ object FrameToast: TFrameToast
         Stroke.Kind = None
       end
     end
-    object lytIcon: TALLayout
+    object lytIcon: TLayout
       Align = Left
       Position.X = 5.000000000000000000
       Size.Width = 50.000000000000000000

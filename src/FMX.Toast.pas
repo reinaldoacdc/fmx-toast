@@ -2,7 +2,10 @@ unit FMX.Toast;
 
 interface
 
-uses ALFmxLayouts, FMX.Types, ALFmxObjects, FMX.VirtualKeyboard, FMX.Graphics, System.UITypes, ALFmxAni, FMX.Platform, FMX.Forms,
+uses //ALFmxLayouts,
+FMX.Layouts, FMX.Ani,
+FMX.Types, //ALFmxObjects, ALFmxAni,
+FMX.VirtualKeyboard, FMX.Graphics, System.UITypes, FMX.Platform, FMX.Forms,
   FMX.Toast.Frame, FMX.Toast.Types, System.SysUtils, System.DateUtils;
 
 type
@@ -11,9 +14,9 @@ type
     FOwner: TFmxObject;
     FPosition: TAlignLayout;
     FDuration: Integer;
-    FAnimation: TALFloatPropertyAnimation;
+    FAnimation: TFloatAnimation;
     FFrame: TFrame;
-    FContent: TALLayout;
+    FContent: TLayout;
     FType: TToastType;
     FMessage: string;
     procedure DeleteToast(Sender: TObject);
@@ -49,7 +52,7 @@ var
   LService: IFMXVirtualKeyboardService;
 {$ENDIF}
 begin
-  FAnimation := TALFloatPropertyAnimation.Create(FOwner);
+  FAnimation := TFloatAnimation.Create(FOwner);
   FAnimation.Parent := FFrame;
   FAnimation.StartValue := 0;
   FAnimation.StopValue := 3;
@@ -69,7 +72,7 @@ end;
 
 procedure TToast.CreateContent;
 begin
-  FContent := TALLayout.Create(FOwner);
+  FContent := TLayout.Create(FOwner);
   FContent.Parent := TFmxObject(FOwner);
   FContent.Opacity := 1;
   FContent.Align := TAlignLayout.Contents;
